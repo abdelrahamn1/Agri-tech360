@@ -1,0 +1,35 @@
+:root {
+  --white: #fff;
+  --green: rgba(78, 127, 88, 1);
+  --brown: rgba(193, 89, 64, 1);
+  --gray: rgba(145, 145, 145, 1);
+  --dark-green: rgba(65, 100, 74, 1);
+  --pink: rgba(247, 105, 104, 1);
+  --white-blow: rgba(242, 227, 219, 1);
+  --text-shadow: 5px 5px 10px white;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white-blow);
+  font-family: "Cairo", sans-serif;
+}
+
+code {
+  font-family: "Cairo", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--brown);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 5px;
+}
