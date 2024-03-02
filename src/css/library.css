@@ -2,12 +2,31 @@
   padding-top: 100px;
 }
 .library .container {
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 20px;
   padding-left: 50px;
   padding-right: 50px;
 }
-.library .container .flex p:not(:nth-child(3)) {
-  display: none;
+.library .container .flex img {
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+}
+.library .container .flex {
+  text-align: center;
+  /* border: 1px groove gray; */
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.library .container .flex li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  transform: translateX(50px);
+}
+.library .container .flex h2 {
+  padding-bottom: 16px;
 }
