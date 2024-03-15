@@ -36,9 +36,6 @@ function Navbar() {
               <li>
                 <Link to="/library">Library</Link>
               </li>
-              <li>
-                <a href="#faqs">FAQs</a>
-              </li>
             </ul>
           </div>
           <button>

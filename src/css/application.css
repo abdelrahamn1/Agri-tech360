@@ -71,6 +71,10 @@
 
 .selected-image {
   margin-top: 10px;
-  transform: translateX(-10px);
+  transform: translateX(-15px);
   padding-bottom: 20px;
+}
+.selected-image img {
+  width: 200px;
+  height: 250px;
 }

@@ -3,7 +3,7 @@ function Identify() {
   const [activeIndex, setActiveIndex] = useState(0); // State to track the active index
 
   const instructions = [
-    "Open DetPlant and tap the camera button in the Plant Health tab",
+    "Open Agri-tech360 and tap the camera button in the Plant Health tab",
     "Place your sick plant at the center of the frame",
     "Snap photos of the diseased parts of a leaf or multiple leaves",
     "That’s it! Now you know the issue and how to cure it",

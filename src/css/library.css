@@ -1,32 +1,116 @@
 .library {
-  padding-top: 100px;
+  background: url(https://blossomplant.com/assets/images/bg_pl_block_3-4_desk@2x.jpg)
+    #fff;
+  background-position: center -120px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.library .container {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  gap: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.library .container .flex img {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-}
-.library .container .flex {
-  text-align: center;
-  /* border: 1px groove gray; */
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
-.library .container .flex li {
+
+.library .hero-library {
+  background: linear-gradient(207.11deg, #beffe4 12.24%, #e3f8d3 90.4%);
+  height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  transform: translateX(50px);
 }
-.library .container .flex h2 {
-  padding-bottom: 16px;
+.library .hero-library h2 {
+  width: 40%;
+  margin-left: 20px;
+  transform: translateY(-20px);
+}
+.library .lib-btn {
+  background: linear-gradient(90deg, #ebb461, #fa8966);
+  box-shadow: 0 10px 30px rgba(250, 137, 102, 0.2);
+  border-radius: 48px;
+  width: 176px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  position: absolute;
+  top: 46%;
+  left: 8%;
+  transform: translate(-50%, -70%);
+  z-index: 1;
+}
+.library a {
+  color: var(--white);
+}
+
+.library .hero-library img {
+  width: 680px;
+  height: 250px;
+  transform: translateY(75px);
+}
+.library .text {
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 1px solid rgba(128, 128, 128, 0.54);
+  border-radius: 20px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+}
+.text button {
+  border: none;
+  outline: none;
+  background: transparent;
+  position: relative;
+  bottom: -8px;
+  z-index: 2;
+  background-color: #f1faf7;
+  border-radius: 10px;
+  font-size: 15px;
+  color: var(--orange);
+  cursor: pointer;
+}
+.library .container .grid img {
+  width: 230px;
+  height: 170px;
+  border-radius: 20px 20px 5px 5px;
+}
+.library .container {
+  padding-top: 100px;
+  padding-left: 90px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.library .container .grid {
+  margin-bottom: 50px;
+  background: var(--white);
+  height: 320px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid rgb(211 226 248);
+  position: relative;
+}
+.library .container .grid h3 {
+  padding-top: 20px;
+  font-size: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 600;
+}
+.library .container .grid .plant-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%);
+  color: black;
+  background: var(--orange);
+  padding: 5px 8px;
+  font-size: 15px;
+  color: var(--white);
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+}
+
+.library .container .grid .plant-btn:hover {
+  background: var(--dark-green);
 }

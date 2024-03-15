@@ -1,20 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom to navigate to the details page
+import { useParams } from "react-router-dom";
+import plantsData from "../components/data.json";
+import "../css/PlantListPage.css";
 
-const PlantListPage = ({ plants }) => {
+function PlantListPage() {
+  const { id } = useParams();
+  const plantId = parseInt(id);
+  const plant = plantsData.find((plant) => plant.id === plantId);
+
   return (
-    <div>
-      <h1>Plant List</h1>
-      <ul>
-        {plants.map((plant, index) => (
-          <li key={index}>
-            <Link to={`/plants/${index}`}>{plant.plantName}</Link>:{" "}
-            {plant.plantShortDescription}
-          </li>
-        ))}
-      </ul>
+    <div className="plant-details">
+      {plant && (
+        <div className="description">
+          <div className={plant.name}>
+            <img src={plant.img} alt={plant.name} />
+          </div>
+          <div className="text-descrip">
+            <h2>{plant ? plant.name : "Plant not found"}</h2>
+            <p>{plant.description}</p>
+          </div>
+        </div>
+      )}
+
+      <div className="signs">
+        <h3>Signs of damage :</h3>
+        <p>{plant.signs}</p>
+      </div>
     </div>
   );
-};
+}
 
 export default PlantListPage;

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import Slider from "./Slider";
 import Identify from "../components/Identify";
 import Featuress from "./Features";
-import img from "../asests/about-diseases.jpeg";
+import ChatBot from "./ChatBot";
 function Home() {
   const images = [
     "https://blossomplant.com/assets/images/img_disease_3-1.webp",
@@ -37,8 +37,8 @@ function Home() {
               Our Earth is <span>Precious</span>
             </h2>
             <p>
-              DetPlant focuses on using advanced image recognition to swiftly
-              and accurately detect leaf plant diseases for agricultural
+              Agri-tech360 focuses on using advanced image recognition to
+              swiftly and accurately detect leaf plant diseases for agricultural
               improvement.
             </p>
           </div>
@@ -57,12 +57,12 @@ function Home() {
             </div>
             <div className="hero-text" data-aos="fade-left">
               <h2>
-                Identify and cure <span>plant diseases</span> with DetPlant
+                Identify and cure <span>plant diseases</span> with Agri-tech360
               </h2>
               <p>
-                Is your green buddy dying? Try the<span>DetPlant</span> app to
-                identify the cause and get extensive disease and care info in a
-                snap
+                Is your green buddy dying? Try the<span>Agri-tech360</span> app
+                to identify the cause and get extensive disease and care info in
+                a snap
               </p>
               <button>
                 <Link to="/application">Dignose Now!</Link>
@@ -78,10 +78,10 @@ function Home() {
               <p data-aos="fade-up">
                 Have you ever searched ‘what’s wrong with my plant’? The results
                 may have been disappointing... No more with
-                <span> DetPlant!</span> Simply snap a photo of the issue to get
-                a diagnosis. <span>Detplant</span> will give you detailed info
-                on the disease, what caused it, how to treat it, and how to
-                prevent it.
+                <span> Agri-tech360!</span> Simply snap a photo of the issue to
+                get a diagnosis. <span>Agri-tech360</span> will give you
+                detailed info on the disease, what caused it, how to treat it,
+                and how to prevent it.
               </p>
             </div>
             <div className="additional-images">
@@ -116,21 +116,22 @@ function Home() {
           {/* about section */}
           <div className="about-section">
             <h2 data-aos="zoom-out">
-              OverView about <span>DetPlant</span>
+              OverView about <span>Agri-tech360</span>
             </h2>
             <div className="about-content">
               <div className="about-text">
                 <h3 data-aos="fade-up">
                   Get ready to discover the wonders of nature with{" "}
-                  <span>Detplant</span> – the ultimate pocket companion for
-                  plant enthusiasts! With <span>Detplant's</span> cutting-edge
-                  technology, you can now identify any plant with just a photo.
-                  Whether you're indoors admiring your houseplants or outdoors
-                  exploring new species, <span>DetPlant</span> will provide you
-                  with accurate information, including the plant's name and
-                  classification. Become your own botanical expert with{" "}
-                  <span>Detplant</span> by your side wherever you roam, and
-                  delve into the captivating world of flora in real-time
+                  <span>Agri-tech360</span> – the ultimate pocket companion for
+                  plant enthusiasts! With <span>Agri-tech360's</span>{" "}
+                  cutting-edge technology, you can now identify any plant with
+                  just a photo. Whether you're indoors admiring your houseplants
+                  or outdoors exploring new species, <span>Agri-tech360</span>{" "}
+                  will provide you with accurate information, including the
+                  plant's name and classification. Become your own botanical
+                  expert with <span>Agri-tech360</span> by your side wherever
+                  you roam, and delve into the captivating world of flora in
+                  real-time
                 </h3>
                 <div className="about-videos">
                   <div
@@ -193,16 +194,16 @@ function Home() {
                 More than just <span>disease identification</span>
               </h3>
               <p data-aos="fade-up">
-                <span>DetPlant</span> offers far more than just plant disease
-                identification – it's a comprehensive platform designed to
-                elevate your plant care experience! Experience{" "}
-                <span>DetPlant</span> for yourself, free of charge, and unlock a
-                wealth of resources including an extensive care library,
-                identification tools, personalized care reminders, and a
-                plethora of expert plant care advice. Dive into the world of
-                plant care with <span>DetPlant</span> and discover all the tools
-                and tips you need to nurture your green companions to their
-                fullest potential!
+                <span>Agri-tech360</span> offers far more than just plant
+                disease identification – it's a comprehensive platform designed
+                to elevate your plant care experience! Experience{" "}
+                <span>Agri-tech360</span> for yourself, free of charge, and
+                unlock a wealth of resources including an extensive care
+                library, identification tools, personalized care reminders, and
+                a plethora of expert plant care advice. Dive into the world of
+                plant care with <span>Agri-tech360</span> and discover all the
+                tools and tips you need to nurture your green companions to
+                their fullest potential!
               </p>
             </div>
             <div className="features-flex">
@@ -239,6 +240,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <ChatBot />
     </>
   );
 }

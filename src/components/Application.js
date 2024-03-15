@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../css/application.css";
+import ChatBot from "./ChatBot";
+
 function Application() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [result, setResult] = useState(null);
@@ -14,7 +16,7 @@ function Application() {
       const formData = new FormData();
       formData.append("image", selectedFile);
 
-      const response = await axios.post("YOUR_API_ENDPOINT", formData, {
+      const response = await axios.post("apiiiiiiiiiiiiiiii", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -30,7 +32,7 @@ function Application() {
     <div className="application">
       <div className="text-application">
         <h1 style={{ padding: selectedFile ? "0" : "" }}>
-          <span>DetPlant</span> Detector
+          <span>Agri-tech360</span> Detector
         </h1>
         <div className="selected-image">
           {selectedFile && (
@@ -55,11 +57,13 @@ function Application() {
         {result && (
           <div>
             <h2>Result:</h2>
-            <p>Disease: {result.disease}</p>
+            <p>Predication: {result.prediction}</p>
             <p>Confidence: {result.confidence}</p>
+            <p>information: {result.information}</p>
           </div>
         )}
       </div>
+      <ChatBot />
     </div>
   );
 }

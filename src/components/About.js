@@ -1,5 +1,6 @@
 import "../css/about.css";
 import icon from "../asests/icon.png";
+import ChatBot from "./ChatBot";
 function About() {
   return (
     <>
@@ -15,7 +16,7 @@ function About() {
             </div>
             <div className="about-text" data-aos="fade-left">
               <h2>
-                Identify plants around you with <span>DetPlant</span>
+                Identify plants around you with <span>Agri-tech360</span>
               </h2>
               <p>
                 Discover more plants, flowers, succulents, and trees around you
@@ -25,7 +26,7 @@ function About() {
           <div className="additional-about-text" data-aos="fade-up">
             <div className="text-flex">
               <h3>
-                About <span>DetPlant !</span>
+                About <span>Agri-tech360 !</span>
               </h3>
               <p className="ai">
                 <span>AI-powered</span> plant identifier in your pocket
@@ -139,6 +140,7 @@ function About() {
             </div>
           </div>
         </div>
+        <ChatBot />
       </div>
     </>
   );
