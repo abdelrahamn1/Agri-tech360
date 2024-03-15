@@ -121,10 +121,26 @@ function Library() {
             <li>
               <img src={plant.img} alt={plant.name} />
               <h3>{plant.name}</h3>
-              <Link to={`/library/${plant.id}`} className="plant-btn">
-                Read More
-              </Link>
             </li>
+            <button class="uiverse">
+              <div class="wrapper">
+                <Link to={`/library/${plant.id}`} className="plant-btn">
+                  Read More
+                </Link>
+                <div class="circle circle-12"></div>
+                <div class="circle circle-11"></div>
+                <div class="circle circle-10"></div>
+                <div class="circle circle-9"></div>
+                <div class="circle circle-8"></div>
+                <div class="circle circle-7"></div>
+                <div class="circle circle-6"></div>
+                <div class="circle circle-5"></div>
+                <div class="circle circle-4"></div>
+                <div class="circle circle-3"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-1"></div>
+              </div>
+            </button>
           </div>
         ))}
       </div>
