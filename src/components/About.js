@@ -1,9 +1,11 @@
 import "../css/about.css";
 import icon from "../asests/icon.png";
 import ChatBot from "./ChatBot";
+import Navbar from "./Navbar";
 function About() {
   return (
     <>
+      <Navbar isActive = "about"/>
       <div className="about">
         <div className="main-about">
           <div className="main-flex">

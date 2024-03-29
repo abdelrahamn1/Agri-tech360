@@ -10,6 +10,7 @@ import Slider from "./Slider";
 import Identify from "../components/Identify";
 import Featuress from "./Features";
 import ChatBot from "./ChatBot";
+import Navbar from "./Navbar";
 function Home() {
   const images = [
     "https://blossomplant.com/assets/images/img_disease_3-1.webp",
@@ -25,6 +26,7 @@ function Home() {
   ];
   return (
     <>
+    <Navbar isActive="home"/>
       <div className="home">
         <div className="header">
           <div className="video-header-section">

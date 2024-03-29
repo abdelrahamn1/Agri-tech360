@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import plantsData from "../components/data.json";
 import "../css/PlantListPage.css";
+import Navbar from "./Navbar";
 
 function PlantListPage() {
   const { id } = useParams();
@@ -9,6 +10,8 @@ function PlantListPage() {
   const plant = plantsData.find((plant) => plant.id === plantId);
 
   return (
+    <>
+      <Navbar isActive="library"/>
     <div className="plant-details">
       {plant && (
         <div className="description">
@@ -27,6 +30,7 @@ function PlantListPage() {
         <p>{plant.signs}</p>
       </div>
     </div>
+  </>
   );
 }
 

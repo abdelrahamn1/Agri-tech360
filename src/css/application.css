@@ -12,7 +12,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 400px;
+  height: auto;
   width: 600px;
   background: linear-gradient(
     125.56deg,
@@ -63,6 +63,7 @@
   font-size: 16px;
   transition: background-color 0.3s;
   margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 .custom-button:hover {

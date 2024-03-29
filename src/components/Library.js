@@ -3,6 +3,7 @@ import plantsData from "../components/data.json";
 import "../css/library.css";
 import ChatBot from "./ChatBot";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 function Library() {
   const [expanded, setExpanded] = useState(false);
@@ -12,6 +13,8 @@ function Library() {
   };
 
   return (
+    <>
+      <Navbar isActive="library"/>
     <div className="library">
       <div className="hero-library">
         <h2>Plant Problems Diagnosis, Identification & Preventing</h2>
@@ -146,6 +149,7 @@ function Library() {
       </div>
       <ChatBot />
     </div>
+  </>
   );
 }
 
