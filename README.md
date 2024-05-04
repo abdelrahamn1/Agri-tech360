@@ -9,7 +9,7 @@
 
 
 
-#### 🌟live Demo :  "still working on it..."
+#### 🌟live Demo :  https://agri-tech360.netlify.app/
 
 
 
