@@ -1,7 +1,7 @@
 .library {
   background: url(https://blossomplant.com/assets/images/bg_pl_block_3-4_desk@2x.jpg)
     #fff;
-  background-position: center -120px;
+  background-position: center 120px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -82,39 +82,22 @@
   gap: 20px;
 }
 .library .container .grid {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   background: var(--white);
   height: 320px;
   border-radius: 20px;
   text-align: center;
-  border: 2px solid rgb(211 226 248);
+  border: 1px solid rgb(211 226 248);
   position: relative;
 }
 .library .container .grid h3 {
-  padding-top: 20px;
+  padding-top: 25px;
   font-size: 16px;
   padding-left: 8px;
   padding-right: 8px;
   font-weight: 600;
 }
 
-/* .library .container .grid .plant-btn {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translate(-50%);
-  color: black;
-  background: var(--orange);
-  padding: 5px 8px;
-  font-size: 15px;
-  color: var(--white);
-  border-radius: 5px;
-  transition: 0.4s ease-in-out;
-}
-
-.library .container .grid .plant-btn:hover {
-  background: var(--dark-green);
-} */
 .uiverse {
   --duration: 7s;
   --easing: linear;

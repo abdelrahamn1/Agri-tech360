@@ -10,6 +10,7 @@ function Application() {
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
+    setResult(null);
   };
 
   const handleUpload = async () => {
@@ -18,13 +19,13 @@ function Application() {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "http://localhost:8000/classify",
+        "https://c9f1-102-189-209-60.ngrok-free.app/classify",
         formData,
         {
           headers: {
             "Content-Type": "multipart/form-data",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoZXJ5b29AZ21haWwuY29tIiwiZXhwIjoxNzE0MzQ2NDgxfQ.Rsx8pb3_kXrEtHLGhNfBExk6Uzp6H9vAefJuiNbsyz0",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoZXJ5b29AZ21haWwuY29tIiwiZXhwIjoxNzE0ODEzNjg0fQ.X5kA_NoJgAZ5h8Ng1BOP1D3Kx7T7GMYsg-y3aCDAB1U",
           },
         }
       );
@@ -62,14 +63,23 @@ function Application() {
           Upload
         </button>
         {result && (
-          <div className="">
-            <h2>Result:</h2>
-            <p>Predication: {result.prediction}</p>
-            <p>Confidence: {result.confidence}</p>
-            <p>information: {result.information}</p>
+          <div className="result-box">
+            <h2>
+              <span>Result:</span>
+            </h2>
+            <p>
+              <span>Predictions:</span> {result.predictions}
+            </p>
+            <p>
+              <span>Confidence:</span> {result.confidence}
+            </p>
+            <p>
+              <span>Information:</span> {result.information}
+            </p>
           </div>
         )}
       </div>
+
       <ChatBot />
     </div>
   );

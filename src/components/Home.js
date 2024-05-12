@@ -7,7 +7,7 @@ import "../css/home.css";
 import Faqs from "./Faqs";
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
-import Identify from "../components/Identify";
+import Identify from "./Identify";
 import Featuress from "./Features";
 import ChatBot from "./ChatBot";
 import Navbar from "./Navbar";
@@ -26,7 +26,7 @@ function Home() {
   ];
   return (
     <>
-    <Navbar isActive="home"/>
+      <Navbar isActive="home" />
       <div className="home">
         <div className="header">
           <div className="video-header-section">

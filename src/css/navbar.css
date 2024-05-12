@@ -1,8 +1,8 @@
 .nav-bar {
-  width: 60%;
+  width: 65%;
   position: fixed;
   top: 20px;
-  left: 20%;
+  left: 16%;
   z-index: 200;
   background: rgba(249, 255, 249, 0.368627451);
   -webkit-backdrop-filter: blur(5px);
@@ -28,7 +28,7 @@
   padding-right: 10px;
 }
 .nav-bar .links {
-  width: 50%;
+  width: 55%;
 }
 .nav-bar .links ul {
   display: flex;
@@ -46,7 +46,7 @@
   font-size: 20px;
   color: var(--orange);
 }
-.nav-bar .links ul .home {
+.nav-bar .links ul .active {
   color: var(--orange);
   font-size: 20px;
   font-weight: bolder;

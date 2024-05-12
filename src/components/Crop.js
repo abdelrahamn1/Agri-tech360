@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../css/application.css";
+import "../css/crop.css";
 import ChatBot from "./ChatBot";
 import Navbar from "./Navbar";
 
-function Application() {
+function Crop() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [result, setResult] = useState(null);
-
+  const [previousCrop, setPreviousCrop] = useState("");
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
+    setResult(null);
+  };
+  const handleTextChange = (event) => {
+    setPreviousCrop(event.target.value);
     setResult(null);
   };
 
@@ -17,15 +21,15 @@ function Application() {
     try {
       const formData = new FormData();
       formData.append("file", selectedFile);
-
+      formData.append("previous_crop", previousCrop);
       const response = await axios.post(
-        "https://c9f1-102-189-209-60.ngrok-free.app/classify",
+        "https://906b-41-45-81-14.ngrok-free.app/recommend-crop",
         formData,
         {
           headers: {
             "Content-Type": "multipart/form-data",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoZXJ5b29AZ21haWwuY29tIiwiZXhwIjoxNzE0ODEzNjg0fQ.X5kA_NoJgAZ5h8Ng1BOP1D3Kx7T7GMYsg-y3aCDAB1U",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoZXJ5b29AZ21haWwuY29tIiwiZXhwIjoxNzE4MTUyMzMyfQ.iJk1N3vySfbONeQbkHvvsJZbHditvf4TXa_Lm3gUHVM",
           },
         }
       );
@@ -36,8 +40,8 @@ function Application() {
   };
 
   return (
-    <div className="application">
-      <Navbar isActive="app" />
+    <div className="crop">
+      <Navbar isActive="crop" />
       <div className="text-application">
         <h1 style={{ padding: selectedFile ? "0" : "" }}>
           <span>Agri-tech360</span> Detector
@@ -59,6 +63,26 @@ function Application() {
             Choose Image
           </label>
         </div>
+        <div style={{ width: "100%" }}>
+          <input
+            type="text"
+            onChange={handleTextChange}
+            className="text-input"
+            style={{
+              border: "none",
+              "border-radius": "4px",
+              padding: "0.65625rem 16px",
+              color: "rgb(255, 255, 255)",
+              "font-weight": 400,
+              "font-size": "0.875rem",
+              display: "block",
+              width: "95%",
+              background: "linear-gradient(90deg, #ebb461, #fa8966)",
+              margin: "1.5rem 0",
+            }}
+            id="fileInput"
+          />
+        </div>
         <button className="custom-button" onClick={handleUpload}>
           Upload
         </button>
@@ -68,13 +92,19 @@ function Application() {
               <span>Result:</span>
             </h2>
             <p>
-              <span>Predictions:</span> {result.predictions}
+              <span>Recommended Crop: </span> {result["recommended crop"]}
             </p>
             <p>
-              <span>Confidence:</span> {result.confidence}
+              <span>Confidence: </span> {result.confidence}
             </p>
             <p>
-              <span>Information:</span> {result.information}
+              <span>soil type: </span> {result["soil type"]}
+            </p>
+            <p>
+              <span>previous crop: </span> {result["previous crop"]}
+            </p>
+            <p>
+              <span>Season: </span> {result["season"]}
             </p>
           </div>
         )}
@@ -85,4 +115,4 @@ function Application() {
   );
 }
 
-export default Application;
+export default Crop;

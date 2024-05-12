@@ -6,7 +6,7 @@
   z-index: 999;
 }
 .chat-button img {
-  width: 40px;
+  width: 35px;
   padding-top: 5px;
 }
 .chat-button {
@@ -20,14 +20,14 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 350px;
+  width: 320px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #fff;
 }
 
 .chat-header {
-  background: linear-gradient(90deg, #ebb461, #fa8966);
+  background: linear-gradient(90deg, #63b68e, #2c6455d0);
   border-radius: 8px 8px 0 0;
   color: white;
   padding: 8px;
@@ -82,7 +82,7 @@
 .input-form {
   display: flex;
   padding: 10px;
-  width: 85%;
+  width: 80%;
 }
 
 .input-form input {
@@ -98,7 +98,7 @@
 
 .input-form button {
   position: absolute;
-  right: -7px;
+  right: -4px;
   bottom: 1px;
   border: none;
   border-radius: 5px;
