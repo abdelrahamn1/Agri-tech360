@@ -1,0 +1,25 @@
+/* LineSlider.css */
+
+.line-slider {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+}
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.line-slider img {
+  width: 350px;
+}
