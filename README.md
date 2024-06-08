@@ -104,4 +104,4 @@ you need to run the code in python and insure the live server is working
 * ## Authors
 
 * **abdelrahman1** - *Initial work* - [abdelrahman1](https://github.com/abdelrahman1)
-* **Sheryoo0** - *Back-end work* - [Sheryoo0](https://github.com/sheryoo)
+
