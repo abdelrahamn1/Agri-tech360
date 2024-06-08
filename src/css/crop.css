@@ -1,5 +1,5 @@
 .crop {
-  background: url(https://plant-disease-detection-346209.web.app/assets/coverImage.jpg);
+  background: url("../asests/coverImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -7,10 +7,6 @@
   height: 742.5px;
   position: relative;
 }
-
-.crop .text-application {
-}
-
 .result-box {
   color: #fff;
   width: auto;
