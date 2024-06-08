@@ -126,7 +126,11 @@ function Library() {
                 <img src={plant.img} alt={plant.name} />
                 <h3>{plant.name}</h3>
               </li>
-              <button class="btn-lib">Read More</button>
+              <button class="uiverse">
+                <Link to={`/library/${plant.id}`} className="plant-btn">
+                  Read More
+                </Link>
+              </button>
             </div>
           ))}
         </div>
