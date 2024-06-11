@@ -39,8 +39,8 @@ function Home() {
             <h2>Our Earth is Precious</h2>
             <p>
               Agri-tech360 focuses on using advanced image recognition to
-              swiftly and accurately detect leaf plant diseases for agricultural
-              improvement.
+              swiftly and accurately detect leaf plant diseases and suggest next
+              crop for agricultural improvement.
             </p>
           </div>
           <button data-aos="fade-left">
@@ -86,11 +86,14 @@ function Home() {
               </p>
             </div>
             <div className="additional-images">
-              <div className="overlay">
-                <br></br>
-                <br></br>
-                start dignose!
-              </div>
+              <Link to="/Application">
+                <div className="overlay">
+                  <br></br>
+                  <br></br>
+                  start dignose!
+                </div>
+              </Link>
+
               <div className="overlay" data-aos="fade-right">
                 <img
                   src="https://blossomplant.com/assets/images/img_disease_2-1.webp"
@@ -126,13 +129,13 @@ function Home() {
                   <span>Agri-tech360</span> – the ultimate pocket companion for
                   plant enthusiasts! With <span>Agri-tech360's</span>{" "}
                   cutting-edge technology, you can now identify any plant with
-                  just a photo. Whether you're indoors admiring your houseplants
-                  or outdoors exploring new species, <span>Agri-tech360</span>{" "}
-                  will provide you with accurate information, including the
-                  plant's name and classification. Become your own botanical
-                  expert with <span>Agri-tech360</span> by your side wherever
-                  you roam, and delve into the captivating world of flora in
-                  real-time
+                  just a photo, Suggest next Crop , Ask Smart Ai Assistent About
+                  plants. Whether you're indoors admiring your houseplants or
+                  outdoors exploring new species, <span>Agri-tech360</span> will
+                  provide you with accurate information, including the plant's
+                  name and classification. Become your own botanical expert with{" "}
+                  <span>Agri-tech360</span> by your side wherever you roam, and
+                  delve into the captivating world of flora in real-time .
                 </h3>
                 <div className="about-videos">
                   <div
@@ -175,7 +178,7 @@ function Home() {
           {/* how identify */}
           <div className="how-identify">
             <h2 data-aos="zoom-out">
-              <span>How to identify </span>a diseases?
+              <span>How to Use </span>Agri-Tech360?
             </h2>
             <div className="identify-flex">
               <div className="identify-img">
