@@ -31,6 +31,11 @@ function Application() {
       );
       setResult(response.data.data);
     } catch (error) {
+      setResult({
+        predictions: "Image is not a plant",
+        confidence: null,
+        information: null,
+      });
       console.error("Error uploading image:", error);
     }
   };
@@ -96,12 +101,16 @@ function Application() {
             <p>
               <span>Predictions:</span> {result.predictions}
             </p>
-            <p>
-              <span>Confidence:</span> {result.confidence}
-            </p>
-            <p>
-              <span>Information:</span> {result.information}
-            </p>
+            {result.confidence && (
+              <p>
+                <span>Confidence:</span> {result.confidence}
+              </p>
+            )}
+            {result.information && (
+              <p>
+                <span>Information:</span> {result.information}
+              </p>
+            )}
           </div>
         )}
       </div>
